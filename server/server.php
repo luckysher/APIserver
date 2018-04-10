@@ -5,6 +5,10 @@ class Server{
     public $appname;
     public $grh;
 
+    public function __contruct(){
+       $this -> appname = 'API Server';
+       $this -> grh = new GameConfig;
+    }
 
     public function handle_post_request($s){
 
