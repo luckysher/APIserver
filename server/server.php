@@ -1,23 +1,23 @@
 <?php
+ include 'gameConf/gameConf.php'
 
 class Server{
     public $appname;
+    public $grh;
 
-    public function __contruct(){
-     $this -> appname = 'API Server';
-    }
 
-    public function process_request(post, get){
+
+    public function process_request($s){
         $json = [];
-        if(post){
-           $json = [array('method' => 'post')];
-        }
-        elseif(get){
-                $json = [array('method' => 'get')];
-        }else {
-                $json = [array('Request error' => 'invalid request')];
-            }
-       return $json;
-}
+        $request_method = $s['REQUEST_METHOD'];
 
+        if(request_method == 'GET'){
+
+        }if(request_method == 'POST'){
+
+        }
+
+        return $json;
+    }
+}
 ?>
