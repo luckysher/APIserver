@@ -20,12 +20,15 @@ class Server{
 
     public function process_request($s){
         $json = [];
-        $request_method = $s['REQUEST_METHOD'];
+        $request_path = $s['REQUEST_PATH'];
 
-        if(request_method == 'GET'){
 
-        }if(request_method == 'POST'){
+        if($request_path == 'getconfig'){
+            handle_get_request($s)
+        }
 
+        if($request_path == 'setconfig'){
+            handle_set_request($s)
         }
 
         return $json;
