@@ -1,10 +1,10 @@
 <?php
-   // <!-- including Server file  -->
-   include 'server/server.php';
-   // <!-- including Server file  -->
+   // <!-- including contorller file  -->
+   include 'contorller/contorller.php';
+   // <!-- including contorller file  -->
 
-   $server = new Server;
-   $json_data = $server->process_request($_SERVER);
+   $contorller = new Contorller;
+   $json_data = $contorller->process_request($_SERVER);
 
    exit(json_encode($json_data));
 

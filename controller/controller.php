@@ -1,5 +1,5 @@
 <?php
- include 'gameConf/gameConf.php'
+ include 'gameConf/gameConf.php';
 
 
 // API controller
