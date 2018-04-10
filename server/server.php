@@ -6,6 +6,13 @@ class Server{
     public $grh;
 
 
+    public function handle_post_request($s){
+
+    }
+
+    public function handle_get_request($s){
+
+    }
 
     public function process_request($s){
         $json = [];
