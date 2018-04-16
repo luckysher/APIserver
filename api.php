@@ -1,10 +1,10 @@
 <?php
    // <!-- including contorller file  -->
-   include 'contorller/contorller.php';
+   include 'controller/controller.php';
    // <!-- including contorller file  -->
 
-   $contorller = new Contorller;
-   $json_data = $contorller->process_request($_SERVER);
+   $controller = new Controller;
+   $json_data = $controller->process_request($_SERVER);
 
    exit(json_encode($json_data));
 
