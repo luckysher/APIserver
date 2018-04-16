@@ -17,14 +17,28 @@ class Controller{
     public function getConfigurations($qs){
         $qsd = explode("=", $qs);
         $ctype = $qsd[1];
-         echo 'Request for configuration type: '.$ctype.'';
+        if(strtolower($ctype) === 'game'){
+
+        }
+        if(strtolower($ctype) === 'dektop'){
+
+        }
     }
 
     // Method for setting configurations
     public function setConfigurations($qs){
+        if(strtolower($ctype) === 'game'){
 
+        }
+        if(strtolower($ctype) === 'dektop'){
+
+        }
     }
 
+    // Method for handling not found requests.
+    public function handleNotFound(){
+
+    }
 
     // Request Mapping
     public function process_request($s){
@@ -33,16 +47,14 @@ class Controller{
 
         switch($pi){
             case '/getconfig':
-                echo '<h3 style="color:red;">Getting config:</h3>';
                 $qs = $s['QUERY_STRING'];
-                getConfigurations($qs);
+                $this->getConfigurations($qs);
                 break;
             case '/setconfig':
-                echo '<h3 style="color:red;">setting config:</h3>';
-                setConfigurations($qs);
+                $this->setConfigurations($qs);
                 break;
             default:
-                echo '<h3 style="color:red;">Available urls are:</h3>';
+                $this->handleNotFound();
         }
         return $json;
     }
