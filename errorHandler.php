@@ -13,6 +13,8 @@ class Error{
         $this->$availableUrls; = [];
     }
 
-
+    public function setNotFound($nUrl){
+        $this->$notFoundUrl = $nUrl;
+    }
 }
 ?>
