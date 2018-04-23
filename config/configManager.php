@@ -19,28 +19,16 @@ class ConfigManager{
         return $configurations;
     }
 
-    // get all game configurations
-    public function getGameConfigs(){
-        $gameConfigs = null;
+    // get all configurations for e.g. game, desktop
+    public function getConfigs($type){
+        $configs = null;
         $configurations = $this->getAllConfigurations();
         $config_json = json_decode($configurations);
-        if($config_json->{'game'}){
-            $gameConfigs = $config_json->{'game'};
+        if($config_json->{$type}){
+            $configs = $config_json->{$type};
         }
-        return $gameConfigs;
+        return $configs;
     }
-
-    // get all desktop configurations
-    public function getDesktopConfigs(){
-        $desktopConfigs = null;
-        $configurations = $this->getAllConfigurations();
-        $config_json = json_decode($configurations);
-        if($config_json->{'desktop'}){
-            $desktopConfigs = $config_json->{'desktop'};
-        }
-        return $desktopConfigs;
-    }
-
 }
 
 ?>
