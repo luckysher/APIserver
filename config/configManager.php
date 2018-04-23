@@ -33,6 +33,8 @@ class ConfigManager{
     // get all desktop configurations
     public function getDesktopConfigs(){
         $desktopConfigs = null;
+        $configurations = $this->getAllConfigurations();
+        $config_json = json_decode($configurations);
 
     }
 
