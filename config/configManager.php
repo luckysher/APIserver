@@ -25,8 +25,9 @@ class ConfigManager{
         $configurations = $this->getAllConfigurations();
         $config_json = json_decode($configurations);
         if($config_json->{'game'}){
-
+            $gameConfigs = $config_json->{'game'};
         }
+        return $gameConfigs;
     }
 
 }
