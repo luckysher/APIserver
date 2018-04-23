@@ -1,23 +1,18 @@
 <?php
+// import game config Manager
+include 'config/configManager.php';
 
 class GameConfig{
     public $confname;
 
-    public function __contruct(){
+    public function __construct(){
        $this -> confname = 'Game Configurations';
+       $this -> cm = new ConfigManager(null);
     }
 
-    public function process_request($post, $get){
-        $json = [];
-        if($post){
-           $json = [array('method' => 'post')];
-        }
-        elseif($get){
-                $json = [array('method' => 'get')];
-        }else {
-                $json = [array('Request error' => 'invalid request')];
-            }
-        return $json;
+    public function getConfigurations($type){
+        $config = $this->cm->getGameConfig();
+        return $config;
     }
 }
 ?>
