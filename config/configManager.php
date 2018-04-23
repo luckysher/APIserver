@@ -35,7 +35,10 @@ class ConfigManager{
         $desktopConfigs = null;
         $configurations = $this->getAllConfigurations();
         $config_json = json_decode($configurations);
-
+        if($config_json->{'desktop'}){
+            $desktopConfigs = $config_json->{'desktop'};
+        }
+        return $desktopConfigs;
     }
 
 }
