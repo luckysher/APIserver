@@ -13,9 +13,16 @@ class ConfigManager{
         endif;
     }
 
+    // load and get all configurations
     public function getAllConfigurations(){
         $configurations = file_get_contents($this->cfile);
         return $configurations;
+    }
+
+    // get all game configurations
+    public function getGameConfigs(){
+        $gameConfigs = null;
+        $configurations = $this->getAllConfigurations();
     }
 
 }
