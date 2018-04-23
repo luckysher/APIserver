@@ -6,15 +6,16 @@ class ConfigManager{
 
     public function __construct($confile){
         // select appropriate config file user provided/default
-        $cfile = 'configurations.json';
+        $this->cfile = 'config/configurations.json';
 
-        if $confile:
-            $cfile = $confile;
+        if ($confile):
+            $this->cfile = $confile;
         endif;
     }
 
-    public get allConfigurations(){
-
+    public function getAllConfigurations(){
+        $configurations = file_get_contents($this->cfile);
+        return $configurations;
     }
 
 }
