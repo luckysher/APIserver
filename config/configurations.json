@@ -13,6 +13,11 @@
       "rupees": "650",
       "doller": "10"
     }
+  },
+  "desktop":{
+      "window":{
+                "width": "1200px",
+                "height": "800px"
+      }
   }
-
 }
