@@ -30,6 +30,12 @@ class ConfigManager{
         return $gameConfigs;
     }
 
+    // get all desktop configurations
+    public function getDesktopConfigs(){
+        $desktopConfigs = null;
+
+    }
+
 }
 
 ?>
