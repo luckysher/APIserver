@@ -29,6 +29,10 @@ class ConfigManager{
         }
         return $configs;
     }
+
+    public function setConfigs(){
+    //todo
+    }
 }
 
 ?>
