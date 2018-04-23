@@ -23,6 +23,10 @@ class ConfigManager{
     public function getGameConfigs(){
         $gameConfigs = null;
         $configurations = $this->getAllConfigurations();
+        $config_json = json_decode($configurations);
+        if($config_json->{'game'}){
+
+        }
     }
 
 }
