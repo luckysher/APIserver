@@ -8,29 +8,35 @@ class Controller{
     public $grh;
 
     // constructor for controller
-    public function __contruct(){
+    public function __construct(){
+       // controller name
        $this -> contname = 'API Controller';
+       // Game request handler
        $this -> grh = new GameConfig;
     }
 
     // Method for getting configurations
     public function getConfigurations($qs){
+        $config = null;
         $qsd = explode("=", $qs);
         $ctype = $qsd[1];
+        //get config based upon type
         if(strtolower($ctype) === 'game'){
+            $config = $this -> grh -> getGameConfigurations();
+        }
+        if(strtolower($ctype) === 'desktop'){
 
         }
-        if(strtolower($ctype) === 'dektop'){
-
-        }
+        return $config;
     }
 
     // Method for setting configurations
     public function setConfigurations($qs){
+        //set config based upon type
         if(strtolower($ctype) === 'game'){
 
         }
-        if(strtolower($ctype) === 'dektop'){
+        if(strtolower($ctype) === 'desktop'){
 
         }
     }
