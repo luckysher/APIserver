@@ -10,7 +10,7 @@ class DesktopConfig{
        $this -> cm = new ConfigManager(null);
     }
 
-
+    // method for getting configurations
     public function getConfigurations($type){
         $config = $this->cm->getGameConfig();
         return $config;
