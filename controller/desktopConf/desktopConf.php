@@ -6,13 +6,13 @@ class DesktopConfig{
     public $confname;
 
     public function __construct(){
-       $this -> confname = 'Game Configurations';
+       $this -> confname = 'Desktop Configurations';
        $this -> cm = new ConfigManager(null);
     }
 
     // method for getting configurations
-    public function getConfigurations($type){
-        $config = $this->cm->getGameConfig();
+    public function getDesktopConfigurations($type){
+        $config = $this->cm->getConfigurations($type);
         return $config;
     }
 }
