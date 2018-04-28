@@ -2,6 +2,7 @@
 // import game config Manager
 include 'config/configManager.php';
 
+// Game config Manager
 class GameConfig{
     public $confname;
 
