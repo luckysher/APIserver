@@ -12,7 +12,7 @@ class DesktopConfig{
 
     // method for getting configurations
     public function getDesktopConfigurations($type){
-        $config = $this->cm->getConfigurations($type);
+        $config = $this->cm->getConfigs($type);
         return $config;
     }
 }
