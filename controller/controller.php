@@ -25,7 +25,7 @@ class Controller{
             $config = $this -> grh -> getGameConfigurations();
         }
         if(strtolower($ctype) === 'desktop'){
-
+          $config = $this -> drh -> getDesktopConfigurations();
         }
         return $config;
     }
