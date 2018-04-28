@@ -1,5 +1,6 @@
 <?php
  include 'gameConf/gameConf.php';
+ include 'desktopConf/desktopConf.php';
 
 
 // API controller
@@ -13,6 +14,8 @@ class Controller{
        $this -> contname = 'API Controller';
        // Game request handler
        $this -> grh = new GameConfig;
+       // Desktop request handler
+       $this -> drh = new DesktopConfig;
     }
 
     // Method for getting configurations
