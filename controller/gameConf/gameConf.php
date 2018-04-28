@@ -11,7 +11,7 @@ class GameConfig{
     }
 
     public function getConfigurations($type){
-        $config = $this->cm->getGameConfig();
+        $config = $this->cm->getConfigs($type);
         return $config;
     }
 }
