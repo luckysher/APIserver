@@ -60,7 +60,7 @@ class Controller{
         switch($pi){
             case '/getconfig':
                 $qs = $s['QUERY_STRING'];
-                $this->getConfigurations($qs);
+                $json = $this->getConfigurations($qs);
                 break;
             case '/setconfig':
                 $this->setConfigurations($qs);
