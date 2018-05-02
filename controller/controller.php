@@ -1,4 +1,7 @@
 <?php
+ // import config Manager
+ include 'config/configManager.php';
+
  include 'gameConf/gameConf.php';
  include 'desktopConf/desktopConf.php';
 
