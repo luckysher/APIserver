@@ -66,7 +66,7 @@ class Controller{
                 $this->setConfigurations($qs);
                 break;
             default:
-                $this->handleNotFound();
+                $json = $this->handleNotFound();
         }
         return $json;
     }
