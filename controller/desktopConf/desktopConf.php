@@ -11,7 +11,7 @@ class DesktopConfig{
     }
 
     // method for getting configurations
-    public function getDesktopConfigurations(){
+    public function getConfigurations(){
         $config = $this->cm->getConfigs($this -> type);
         return $config;
     }
