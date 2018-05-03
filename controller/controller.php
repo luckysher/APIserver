@@ -31,7 +31,7 @@ class Controller{
             $config = $this -> grh -> getConfigurations();
         }
         if(strtolower($ctype) === 'desktop'){
-          $config = $this -> drh -> getDesktopConfigurations();
+          $config = $this -> drh -> getConfigurations();
         }
         return $config;
     }
