@@ -30,3 +30,11 @@ Get Desktop configurations request:-
 ================================
 
 curl -XGET http://localhost/PHPapi/api.php/getconfig?type=desktop
+
+    response:
+            {
+                "window":  {
+                                "width":"1200px",
+                                "height":"800px"
+                            }
+            }
