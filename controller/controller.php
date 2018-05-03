@@ -28,7 +28,7 @@ class Controller{
         $ctype = $qsd[1];
         //get config based upon type
         if(strtolower($ctype) === 'game'){
-            $config = $this -> grh -> getGameConfigurations();
+            $config = $this -> grh -> getConfigurations();
         }
         if(strtolower($ctype) === 'desktop'){
           $config = $this -> drh -> getDesktopConfigurations();
