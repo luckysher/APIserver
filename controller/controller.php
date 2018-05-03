@@ -56,10 +56,10 @@ class Controller{
     public function process_request($s){
         $json = [];
         $pi = $s['PATH_INFO'];
+        $qs = $s['QUERY_STRING'];
 
         switch($pi){
             case '/getconfig':
-                $qs = $s['QUERY_STRING'];
                 $json = $this->getConfigurations($qs);
                 break;
             case '/setconfig':
