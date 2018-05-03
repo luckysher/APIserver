@@ -3,10 +3,10 @@ API Server is a Rest full API written in PHP. This api serves the various demo c
 
 
 
-Get game configurations request:-
-=====================
+Get Game configurations request:-
+================================
 
-curl -XGET http://192.168.1.100/PHPapi/api.php/getconfig?type=game
+curl -XGET http://localhost/PHPapi/api.php/getconfig?type=game
 
     response:
         {
@@ -24,3 +24,9 @@ curl -XGET http://192.168.1.100/PHPapi/api.php/getconfig?type=game
                          "$":"10"
                      }
         }
+
+
+Get Desktop configurations request:-
+================================
+
+curl -XGET http://localhost/PHPapi/api.php/getconfig?type=desktop
