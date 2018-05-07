@@ -15,5 +15,10 @@ class DesktopConfig{
         $config = $this->cm->getConfigs($this -> type);
         return $config;
     }
+
+    public function setConfigurations(){
+        $config = null;
+        $this->cm->getConfigs($this -> type, $config);
+    }
 }
 ?>
