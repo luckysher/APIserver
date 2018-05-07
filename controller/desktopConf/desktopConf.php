@@ -16,6 +16,7 @@ class DesktopConfig{
         return $config;
     }
 
+    // method for setting desktop configs
     public function setConfigurations(){
         $config = null;
         $this->cm->getConfigs($this -> type, $config);
