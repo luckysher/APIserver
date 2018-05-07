@@ -42,7 +42,7 @@ class Controller{
         $ctype = $qs
         //set config based upon type
         if(strtolower($ctype) === 'game'){
-
+           $config = $this -> grh -> setConfigurations();
         }
         if(strtolower($ctype) === 'desktop'){
               $config = $this -> drh -> setConfigurations()
