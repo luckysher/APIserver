@@ -12,11 +12,13 @@ class GameConfig{
 
     }
 
+    // get game configurations
     public function getConfigurations(){
         $config = $this->cm->getConfigs($this -> type);
         return $config;
     }
 
+    // set game configurations
     public function setConfigurations(){
        $this->cm->setConfigs($this -> type, $config);
     }
