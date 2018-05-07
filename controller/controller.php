@@ -45,7 +45,7 @@ class Controller{
 
         }
         if(strtolower($ctype) === 'desktop'){
-
+              $config = $this -> drh -> setConfigurations()
         }
     }
 
