@@ -30,7 +30,7 @@ class ConfigManager{
         return $configs;
     }
 
-    //
+    // set configurations using config manager
     public function setConfigs($type, $configs){
 
     }
