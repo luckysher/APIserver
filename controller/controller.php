@@ -45,7 +45,7 @@ class Controller{
            $this -> grh -> setConfigurations();
         }
         if(strtolower($ctype) === 'desktop'){
-            $this -> drh -> setConfigurations()
+            $this -> drh -> setConfigurations();
         }
     }
 
