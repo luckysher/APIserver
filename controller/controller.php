@@ -42,9 +42,12 @@ class Controller{
         $ctyped = explode("=", $qsd[0]);
         $ctype = $ctyped[1];
 
+        $cnd = explode("=", $qsd[1]);
+        $cn = $cnd[1];
+
         //set config based upon type
         if(strtolower($ctype) === 'game'){
-           $this -> grh -> setConfigurations();
+           $this -> grh -> setConfigurations($cn);
         }
         if(strtolower($ctype) === 'desktop'){
             $this -> drh -> setConfigurations();
