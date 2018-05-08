@@ -50,10 +50,10 @@ class Controller{
 
         //set config based upon type
         if(strtolower($ctype) === 'game'){
-           $this -> grh -> setConfigurations($cn);
+           $this -> grh -> setConfigurations($cn, $_POST);
         }
         if(strtolower($ctype) === 'desktop'){
-            $this -> drh -> setConfigurations($cn);
+            $this -> drh -> setConfigurations($cn, $_POST);
         }
     }
 
