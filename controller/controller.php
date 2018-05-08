@@ -38,8 +38,10 @@ class Controller{
 
     // Method for setting configurations
     public function setConfigurations($qs){
-        $qsd = explode("=", $qs);
-        $ctype = $qsd[1];
+        $qsd = explode("&", $qs);
+        $ctyped = explode("=", $qsd[0]);
+        $ctype = $ctyped[1];
+
         //set config based upon type
         if(strtolower($ctype) === 'game'){
            $this -> grh -> setConfigurations();
