@@ -39,9 +39,12 @@ class Controller{
     // Method for setting configurations
     public function setConfigurations($qs){
         $qsd = explode("&", $qs);
+
+        // extract config type here
         $ctyped = explode("=", $qsd[0]);
         $ctype = $ctyped[1];
 
+        // extract config name here
         $cnd = explode("=", $qsd[1]);
         $cn = $cnd[1];
 
@@ -50,7 +53,7 @@ class Controller{
            $this -> grh -> setConfigurations($cn);
         }
         if(strtolower($ctype) === 'desktop'){
-            $this -> drh -> setConfigurations();
+            $this -> drh -> setConfigurations($cn);
         }
     }
 
