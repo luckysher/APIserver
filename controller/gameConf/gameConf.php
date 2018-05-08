@@ -20,7 +20,7 @@ class GameConfig{
 
     // set game configurations
     public function setConfigurations($cn, $config){
-       $this->cm->setConfigs($this -> type, $config);
+       $this->cm->setConfigs($this -> type, $cn, $config);
     }
 }
 ?>
