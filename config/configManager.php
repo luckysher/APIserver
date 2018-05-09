@@ -36,6 +36,9 @@ class ConfigManager{
             if (key_exists($cn, $type)){
 
             }
+            else{
+                echo 'config not found';
+            }
     }
 }
 
