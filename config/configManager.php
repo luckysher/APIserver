@@ -32,7 +32,7 @@ class ConfigManager{
 
     // set configurations using config manager
     public function setConfigs($type, $cn, $configs){
-
+            $conf = $this -> getConfigs($type);
     }
 }
 
