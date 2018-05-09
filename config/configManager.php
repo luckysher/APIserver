@@ -35,9 +35,10 @@ class ConfigManager{
             $conf = $this -> getConfigs($type);
             if (key_exists($cn, $type)){
                 $conf = json_decode(json_encode($conf),  true);
-                // set all settings in loop
-                foreach($configs as $k=>$v){
 
+                // set all settings in loop
+                foreach($configs as $k => $v){
+                    $conf[$cn][$k] = $v;
                 }
             }
             else{
