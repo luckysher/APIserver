@@ -35,7 +35,7 @@ class ConfigManager{
             $conf = $this -> getConfigs($type);
             if (key_exists($cn, $type)){
                 // set all settings in loop
-                foreach(){
+                foreach($configs as $k=>$v){
 
                 }
             }
