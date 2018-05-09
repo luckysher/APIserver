@@ -33,6 +33,9 @@ class ConfigManager{
     // set configurations using config manager
     public function setConfigs($type, $cn, $configs){
             $conf = $this -> getConfigs($type);
+            if (key_exists($cn, $type)){
+
+            }
     }
 }
 
