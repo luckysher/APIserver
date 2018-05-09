@@ -34,7 +34,10 @@ class ConfigManager{
     public function setConfigs($type, $cn, $configs){
             $conf = $this -> getConfigs($type);
             if (key_exists($cn, $type)){
+                // set all settings in loop
+                foreach(){
 
+                }
             }
             else{
                 echo 'config not found';
