@@ -40,6 +40,8 @@ class ConfigManager{
                 foreach($configs as $k => $v){
                     $conf[$cn][$k] = $v;
                 }
+                 $configurations = $this->getAllConfigurations();
+                $config_json = json_decode($configurations);
             }
             else{
                 echo 'config not found';
