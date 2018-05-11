@@ -34,11 +34,11 @@ class ConfigManager{
     public function setConfigs($type, $cn, $configs){
             $conf = $this -> getConfigs($type);
             if (key_exists($cn, $type)){
-                $conf = json_decode(json_encode($conf),  true);
+                $newConf = json_decode(json_encode($conf),  true);
 
                 // set all settings in loop
                 foreach($configs as $k => $v){
-                    $conf[$cn][$k] = $v;
+                    $newConf[$cn][$k] = $v;
                 }
                  $configurations = $this->getAllConfigurations();
                 $config_json = json_decode($configurations);
