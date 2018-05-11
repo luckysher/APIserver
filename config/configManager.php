@@ -49,6 +49,8 @@ class ConfigManager{
                 $configurations = $this->getAllConfigurations();
                 $config_json = json_decode($configurations, true);
                 $config_json[$type][$cn] = $newConf[$cn];
+                $sucs = $this->setAllConfigurations($config_json);
+
             }
             else{
                 echo 'config not found';
