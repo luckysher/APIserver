@@ -20,8 +20,8 @@ class ConfigManager{
     }
 
     // set all configurations
-    public function setAllConfigurations(){
-        $configurations = file_get_contents($this->cfile);
+    public function setAllConfigurations($config_str){
+        $success = file_get_contents($this->cfile, $config_str);
         return $success;
     }
 
