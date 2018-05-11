@@ -13,6 +13,8 @@ class ConfigManager{
         endif;
     }
 
+
+
     // load and get all configurations
     public function getAllConfigurations(){
         $configurations = file_get_contents($this->cfile);
@@ -49,7 +51,7 @@ class ConfigManager{
                 $configurations = $this->getAllConfigurations();
                 $config_json = json_decode($configurations, true);
                 $config_json[$type][$cn] = $newConf[$cn];
-                $sucs = $this->setAllConfigurations($config_json);
+                $set = $this->setAllConfigurations(json_encode($config_json));
 
             }
             else{
