@@ -23,6 +23,7 @@ class Error{
         $resMesg["status_code"] = $code;
         $resMesg["status"] = $status;
         $resMesg["message"] = $message;
+        return $resMesg;
     }
 
 }
