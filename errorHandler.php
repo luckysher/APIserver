@@ -19,7 +19,10 @@ class Error{
 
     // get success response message
     public function getSuccessResponse($status, $code, $message){
-
+        $resMesg = array();
+        $resMesg["status_code"] = $code;
+        $resMesg["status"] = $status;
+        $resMesg["message"] = $message;
     }
 
 }
