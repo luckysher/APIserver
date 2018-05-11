@@ -41,7 +41,7 @@ class ConfigManager{
                     $newConf[$cn][$k] = $v;
                 }
                 $configurations = $this->getAllConfigurations();
-                $config_json = json_decode(json_encode($configurations));
+                $config_json = json_decode($configurations, true);
                 $config_json[$type][$cn] = $newConf[$cn];
             }
             else{
