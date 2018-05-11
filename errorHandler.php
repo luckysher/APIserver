@@ -17,5 +17,10 @@ class Error{
         $this->$notFoundUrl = $nUrl;
     }
 
+    // get success response message
+    public function getSuccessResponse($status, $code, $message){
+
+    }
+
 }
 ?>
