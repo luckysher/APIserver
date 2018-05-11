@@ -19,6 +19,12 @@ class ConfigManager{
         return $configurations;
     }
 
+    // set all configurations
+    public function setAllConfigurations(){
+        $configurations = file_get_contents($this->cfile);
+        return $success;
+    }
+
     // get all configurations for e.g. game, desktop
     public function getConfigs($type){
         $configs = null;
