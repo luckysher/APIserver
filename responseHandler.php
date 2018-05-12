@@ -19,10 +19,10 @@ class ResponseHandler{
 
     // get success response message on GET/POST request
     public function getSuccessResp($message, $dataArray=NULL){
-        $resMesg = array();
-        $resMesg["status_code"] = $code;
-        $resMesg["status"] = $status;
-        $resMesg["message"] = $message;
+        $resMesg = $this->getMessage("success");
+        if($dataArray){
+            $resMesg["data"] = $dataArray;
+        }
         return $resMesg;
     }
 
