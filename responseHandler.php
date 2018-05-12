@@ -3,6 +3,7 @@
 class ResponseHandler{
     public $status;
     public $message;
+    public $code;
     public $availableUrls;
 
     public function __construct($notFoundUrl){
