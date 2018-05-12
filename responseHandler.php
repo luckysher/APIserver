@@ -14,7 +14,9 @@ class ResponseHandler{
     }
 
     public function getMessage($message = NULL, $code = NULL, $status = NULL){
-        $this->$notFoundUrl = $nUrl;
+        // Make a default message array
+        $resMesg = Array();
+        $resMesg["code"] = $this->code;
     }
 
     // get success response message on GET/POST request
