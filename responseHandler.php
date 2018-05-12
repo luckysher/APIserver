@@ -1,10 +1,9 @@
 <?php
 
-class Error{
-    $status;
-    $message;
-    $notFoundUrl;
-    $availableUrls;
+class ResponseHandler{
+    public $status;
+    public $message;
+    public $availableUrls;
 
     public function __construct($notFoundUrl){
         $this-> status = 404;
