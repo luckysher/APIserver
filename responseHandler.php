@@ -6,10 +6,10 @@ class ResponseHandler{
     public $code;
     public $availableUrls;
 
-    public function __construct($notFoundUrl){
-        $this-> status = 404;
-        $this->$message = "URL not available";
-        $this->$notFoundUrl->$notFoundUrl;
+    public function __construct(){
+        $this-> code = 200;
+        $this-> status = "ok";
+        $this->$message = "ok";
         $this->$availableUrls; = ["localhost/PHPapi/api.php/getconfig?type=desktop", "localhost/PHPapi/api.php/getconfig?type=game"];
     }
 
