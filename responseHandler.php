@@ -17,8 +17,8 @@ class ResponseHandler{
         $this->$notFoundUrl = $nUrl;
     }
 
-    // get success response message
-    public function getSuccessResponse($status, $code, $message){
+    // get success response message on GET/POST request
+    public function getSuccessResp($message, $dataArray=NULL){
         $resMesg = array();
         $resMesg["status_code"] = $code;
         $resMesg["status"] = $status;
