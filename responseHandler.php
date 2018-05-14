@@ -18,7 +18,7 @@ class ResponseHandler{
         $resMesg = Array();
         $resMesg["code"] = $this->code;
         $resMesg["status"] = $this->status;
-
+        $resMesg["message"] = $this->message;
     }
 
     // get success response message on GET/POST request
