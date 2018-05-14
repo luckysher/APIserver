@@ -17,6 +17,8 @@ class ResponseHandler{
         // Make a default message array
         $resMesg = Array();
         $resMesg["code"] = $this->code;
+        $resMesg["status"] = $this->status;
+
     }
 
     // get success response message on GET/POST request
