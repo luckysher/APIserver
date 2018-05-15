@@ -6,6 +6,7 @@ class ResponseHandler{
     public $code;
     public $availableUrls;
 
+    // constructor
     public function __construct(){
         $this-> code = 200;
         $this-> status = "ok";
