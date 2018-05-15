@@ -13,6 +13,7 @@ class ResponseHandler{
         $this->$availableUrls; = ["localhost/PHPapi/api.php/getconfig?type=desktop", "localhost/PHPapi/api.php/getconfig?type=game"];
     }
 
+    // function for making a response message
     public function getMessage($message = NULL, $code = NULL, $status = NULL){
         // Make a default message array
         $resMesg = Array();
