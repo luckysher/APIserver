@@ -1,5 +1,6 @@
 <?php
 
+// class for handling responses like error, success etc.
 class ResponseHandler{
     public $status;
     public $message;
