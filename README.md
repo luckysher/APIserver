@@ -32,3 +32,25 @@ Get Desktop configurations request:-
 curl -XGET http://localhost/PHPapi/api.php/getconfig?type=desktop
 
     response:
+              {
+                "code":200,
+                "status":"ok",
+                "message":"success",
+                "data":{
+                            "game":{
+                                        "window":{
+                                                    "width":"500px",
+                                                    "height":"500px"
+                                                 },
+                                         "user":{
+                                                    "name":"San",
+                                                    "score":"100",
+                                                    "level":"5"
+                                                },
+                                         "price":{
+                                                    "Rs":"650",
+                                                    "$":"10"
+                                                 }
+                                    }
+                        }
+              }
