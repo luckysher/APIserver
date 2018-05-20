@@ -56,5 +56,7 @@ curl -XGET http://localhost/PHPapi/api.php/getconfig?type=desktop
               }
 
 
+POST:
+=====
   # The API server also supports POST requests for setting various configs
   # like user can pass the config name and setting for the cofig as json
