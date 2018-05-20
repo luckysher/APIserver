@@ -1,6 +1,7 @@
 <?php
 
 // Game config Manager
+// for managing the game related function
 class GameConfig{
     public $confname;
     public $type;
