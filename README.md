@@ -9,21 +9,21 @@ Get Game configurations request:-
 curl -XGET http://localhost/PHPapi/api.php/getconfig?type=game
 
     response:
-        {
-            "window": {
-                        "width":"500px",
-                        "height":"500px"
-                      },
-            "user":   {
-                        "name":"San",
-                        "score":"100",
-                        "level":"5"
-                       },
-            "price": {
-                         "Rs":"650",
-                         "$":"10"
-                     }
-        }
+            {
+                "code"   : 200,
+                "status" : "ok",
+                "message":"success",
+                "data":
+                        {
+                            "desktop":{
+                                        "window":{
+                                                    "width":"2400",
+                                                    "height":"1800"
+                                                  }
+                                       }
+                        }
+            }
+
 
 
 Get Desktop configurations request:-
@@ -32,9 +32,3 @@ Get Desktop configurations request:-
 curl -XGET http://localhost/PHPapi/api.php/getconfig?type=desktop
 
     response:
-            {
-                "window":  {
-                                "width":"1200px",
-                                "height":"800px"
-                            }
-            }
